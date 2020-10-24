@@ -1,0 +1,72 @@
+/*-------------------------------------
+----------FOOTER---------
+------------------------------------*/
+.footer {
+  /*background-color: #333;*/
+  background-color: #34495e;
+  padding: 8rem 0;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  /*display: flex;*/
+}
+.footer-icons ul,
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-icons li,
+.footer-nav li {
+  padding: 2rem;
+  display: inline-block;
+}
+
+.footer-icons li a:link,
+.footer-icons li a:visited,
+.footer-nav li a:link,
+.footer-nav li a:visited
+{
+  text-decoration: none;
+  color: #7f8c8d;
+  transition: all .2s;
+
+}
+.footer-nav li a:hover,
+.footer-nav li a:active
+{
+  color: #bdc3c7;
+}
+
+.icon {transition: all .2s;}
+
+.instagram:hover { color: #c32aa3;}
+.twitter:hover { color: #1da1f2;}
+.youtube:hover { color: #ff0000;}
+.facebook:hover { color: #1877f2;}
+
+.copy {
+  margin-top: 2rem;
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+.copy-2 {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.4rem !important;
+}
+
+.gallery {
+  display: flex;
+  //height: 17rem;
+  overflow: hidden;
+}
+.gallery__photo {
+  width: 100%;
+  display: block;
+}

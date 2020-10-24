@@ -1,0 +1,240 @@
+.section-contact{
+  padding: 8rem 0;
+
+  background-image: linear-gradient(to right bottom, var(--color-grey-light-1), var(--color-grey-light-2));
+
+  //background-image: linear-gradient(to right bottom, $color-turquoise, $color-greensea);
+}
+
+.contact-container {
+
+}
+
+.contact {
+  //max-width: 70%;
+  //display: flex;
+  //background-image: url("../img/window.jpg");
+  //radient on top of the image
+  //background-image: linear-gradient(90deg, rgba(255,255,255,.9), indianred), url("../img/window.jpg");
+  background-image: linear-gradient(105deg,
+          rgba(255,255,255,.9) 0%,
+          rgba(255,255,255,.9) 50%,
+          transparent 50%),
+  url("../img/window.jpg");
+  background-image: linear-gradient(105deg,
+          rgba(255,255,255,.9) 0%,
+          rgba(255,255,255,.9) 50%,
+          transparent 100%),
+  url("../img/contact.jpg");
+  background-size: cover;
+  //background-size: 100%;
+  //background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0,.2);
+
+  //height: 50rem;
+
+  @media only screen and (max-width: $bp-huge) {
+    //background-position: center;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    //background-position: center;
+  }
+
+  &__form {
+    //width: 50%;
+    //width: 65%;
+    width: 70%;
+    padding: 6rem;
+
+    @media only screen and (max-width: $bp-huge) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 3rem;
+      width: 95%;
+    }
+
+    @media only screen and (max-width: $bp-tiny-phones) {
+      padding: 1rem;
+      width: 99%;
+    }
+
+  }
+}
+
+.form {
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-phones) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    //background-color: rgba(255,255,255,.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+
+    @media only screen and (max-width: $bp-phones) {
+      //width: 80%;
+    }
+    @media only screen and (max-width: $bp-small-phones) {
+      width: 99%;
+    }
+
+    &-message {
+      //height: 20rem;
+      //padding: 2.5rem 4rem;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+      border-bottom: 3px solid $color-greensea;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-alizarin;
+    }
+
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+  }
+
+  //&__input:placeholder-shown {
+  //
+  //}
+
+  //adjacent sibling
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+
+.snippets-contact {
+
+  .list {
+    list-style: none;
+    font-size: 1.6rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+    }
+
+    &__item-phone::before {
+      //cursor: pointer;
+      content: "";
+      display: inline-block;
+      height: 1.8rem;
+      width: 1.5rem;
+      margin-left: -1rem;
+      margin-right: .7rem;
+      //older browsers
+      //background-image: url(../img/SVG/phone-square.svg);
+      //background-size: cover;
+
+      //Newer browsers - masks
+     // background-color: $color-greensea;
+      -webkit-mask-image: url(../img/SVG/phone-square.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/SVG/phone-square.svg);
+      mask-size: cover;
+      mask-size: 100%;
+
+    }
+
+    &__item-email::before {
+      content: "";
+      display: inline-block;
+      height: 1.6rem;
+      width: 1.6rem;
+      margin-left: -1rem;
+      margin-right: .7rem;
+      //older browsers
+      //background-image: url(../img/SVG/phone-square.svg);
+      //background-size: cover;
+
+      //Newer browsers - masks
+     // background-color: $color-greensea;
+      -webkit-mask-image: url(../img/SVG/envelope.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/SVG/envelope.svg);
+      mask-size: cover;
+      transition: all .2s;
+
+      &:hover {
+      //  background-color: $color-turquoise;
+      }
+
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: var(--color-grey-dark-3);
+        //color: red;
+      }
+    }
+  }
+}
+.snippet {
+  font-size: 1.8rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  border-top: 5px solid $color-greensea;
+  border-radius: 2px;
+  padding: 2rem;
+  margin-bottom: 3.5rem;
+
+  &__text {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+}
+.snippet__heading {
+
+  &-1 {
+
+  }
+  &-2 {
+    font-size: 1.65rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+  }
+}
+
+

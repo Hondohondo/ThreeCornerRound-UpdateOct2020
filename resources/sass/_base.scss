@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+/*Nephritis Color: #27ae60;*/
+
+
+$color-secondary: #2980b9; //a variable used in the hero overlay
+$color-primary: #f4b433; //logo color - used in alternating section - image overlay
+$color-test: #c69963;
+$color-test1: #b28451;
+$color-test2: #101d2c;
+
+$color-greensea1: #16a085; //dark
+$color-greensea: #F5DCBB; //trc-color
+$color-turquoise1: #1abc9c; //light
+$color-turquoise: #33495e; //trc-color
+
+//Colors from FlatUI Colors flatuicolors.com
+
+$color-pomegranate: #c0392b; //dark reddish
+$color-alizarin: #e74c3c; //light red
+
+$color-midnightblue: #2c3e50; //dark
+$color-wetasphalt: #34495e; //light
+
+$color-nephritis: #27ae60; //dark green
+$color-emerald: #2ecc71; //light green
+
+$color-belizehole: #2980b9; //dark blueish
+$color-peterriver: #3498db; //light blueish
+
+$color-amethyst: #9b59b6; //light-violet
+$color-wisteria: #8e44ad; //dark-violet
+
+$color-asbestos: #7f8c8d;
+$color-orange: #f39c12;
+
+//MEDIA QUERIES
+// Set first break point a bit bigger than the width of your container/row
+
+//1300px
+//$bp-huge: 81.25em; // 1300px/16
+
+//1250px (One = 1000-1250) --for widths smaller than 1200px row
+$bp-huge: 78.125em;
+
+//1200px-
+//$bp-largest: 75em; // Break-Point (1200px/16=75)
+
+//1100px-
+$bp-large: 68.75em; // Break-Point (1100px/16=68.75)
+
+// 1000px (Two = 800-999)
+$bp-medium: 62.5em; // Break-Point (1000px/16=62.5)
+
+// 900px-
+//$bp-medium-small: 56.25em; // Break-Point (900px/16=56.25)
+
+// 800px- (Three = 600-799)
+$bp-phones: 50em; // Break-Point (800px/16=50)
+
+// 768px
+//$bp-small: 48em; // Break-Point (768px/16=48)
+
+// 650px-
+//$bp-phones: 40.625em; // 650px/16 = 40.625
+
+// 600px- (Four = 400-599)
+//$bp-small-phones: 37.5em; // 600px/16 = 37.5
+
+
+// 600px- (Four = 400-599)
+$bp-small-phones: 37.5em; // 600px/16 = 37.5
+
+// 500px-
+//$bp-small-phones: 37.5em; // 500px/16 = 31.25
+
+// 400px- (Five = 0 - 399)
+$bp-tiny-phones: 25em; // 400px/16 = 25
+
+
+//#16a085 - Green Sea
+//#2980b9 - Belize Hole
+//#2c3e50 - Midnight Blue
+
+:root {
+  --color-primary: #eb2f64;
+  // -- belize hole warm blue;
+  //#3498db -- peter river blue;
+  //#f39c12 -- orange
+  //#e67e22 -- carrot
+  // from https://flatuicolors.com/ v1
+
+  //--color-primary: ...
+
+  --color-primary-light: #3498db;
+  --color-primary-dark: #2980b9;
+
+  --color-secondary-1: #f4b433; //logo color
+  --color-secondary-2: #e67e22; //carrot
+
+  --color-grey-light: #f7f7f7;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #cccccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777777;
+  --color-grey-dark-3: #999;
+
+  --color-dark-blue-logo: #1A4070;
+
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+  //--line2: 10px solid var(--color-grey-light-2);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------*/
+/*BASIC SETUP*/
+/*---------------------------------------*/
+
+*,
+*::before,
+*::after {
+  //box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1 rem equals 10px //10px/16px=62.5%
+    scroll-behavior: smooth;
+    background-color: #fff;
+    color: #555;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+
+
+  //@media only screen and (max-width: $bp-largest) {
+  //  //9.5px/16 = 0.59375 = 59.375% ((15.2px)
+  //  font-size: 59.375%;
+  //}
+  //@media only screen and (max-width: $bp-largest) {
+  //  9px/16 = 0.5625 = 56.25%
+  //  font-size: 56.25%;
+  //}
+  @media only screen and (max-width: $bp-large) {
+    //8.5px/16 = 0.53125 = 53.125%
+    //font-size:  53.125%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    //8px/16 = 0.5 = 50%
+    //font-size: 50%;
+    //font-size:  53.125%;
+    //font-size: 56.25%;
+    font-size: 59.375%;
+  }
+  @media only screen and (max-width: $bp-small-phones) {
+    //  9px/16 = 0.5625 = 56.25%
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-tiny-phones) {
+    //8px/16 = 0.5 = 50%
+    font-size: 50%;
+  }
+
+}
+
+body {
+  //font-family: 'Open Sans', sans-serif;
+  //font-weight: 400;
+  //line-height: 1.6;
+  //color: var(--color-grey-dark-2);
+  //background-color: #fff;
+  //min-height: 100vh;
+  //text-rendering: optimizeLegibility;
+  //overflow-x: hidden;
+  font-size: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.8rem;
+  }
+}
+
+
+/*.cta {*/
+/*    padding: 1rem 1.5rem;*/
+/*}*/
+
+a {
+  outline: 0;
+}

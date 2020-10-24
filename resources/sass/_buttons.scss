@@ -1,0 +1,238 @@
+//Buttons
+.btn{
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20rem;
+  /*transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+  /*transition: background-color 0.3s, border 0.3s, color 0.3s;*/
+  transition: all .4s;
+}
+
+.btn-full {
+  //background-color: #27ae60;
+  background-color: #33495e;
+  border: 1px solid #27ae60;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+
+.btn:link,
+.btn:visited {
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20rem;
+  /*transition: background-color 0.2s, border 0.2s, color 0.2s;*/
+  /*transition: background-color 0.3s, border 0.3s, color 0.3s;*/
+  transition: all .4s;
+}
+
+.btn:hover,
+.btn:active {
+  /*background-color: #219251;*/
+  background-color: #F5DCBB;
+  cursor: pointer;
+  color: #555;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  //background-color: #27ae60;
+  background-color: #33495e;
+  border: 1px solid #27ae60;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  //border: 1px solid #27ae60;
+  border: 1px solid #555;
+}
+
+
+.btn-ghost:link,
+.btn-ghost:visited
+{
+  /*border: 1px solid #27ae60;*/
+  border: 1px solid #F5DCBB;
+  color: #27ae60;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active
+{
+  /*border: 1px solid #27ae60;*/
+  border: 1px solid #555;
+  /*border: 20px solid inherit;*/
+  /*color: #fff;*/
+}
+
+.cta {
+  //padding: 3.5rem 0;
+  text-align: center;
+
+  &__request-info {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+}
+
+
+.snippet form {
+  text-align: center;
+}
+
+.snippet form input:focus {
+  outline: none;
+}
+
+/////////////////////////////////////////////////////////
+/////// CTA BUTTON
+.btn-cta {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  //background-image: linear-gradient(to right, $color-greensea, $color-turquoise);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  //cursor: pointer;
+  animation: pulsate 1s infinite;
+  //animation: pulsate 1s 10;
+  //transition: all .2s;
+
+  //short hand for all the children
+  //& > * {
+  //  display: inline-block;
+  //  padding: 2rem 7.5rem;
+  //  height: 100%;
+  //  width: 100%;
+  //  transition: all .2s;
+  //}
+
+  &__visible {
+    display: inline-block;
+    padding: 2rem 7.5rem;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+
+  }
+
+  &__invisible {
+    display: inline-block;
+    position: absolute;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    //color: black;
+    transition: all .2s;
+
+  }
+
+  &:hover {
+    //background-image: linear-gradient(to left, $color-greensea, $color-turquoise);
+    //animation: none;
+    //animation: pulsate 1s 4;
+    //animation: pulsate 1s infinite;
+  }
+
+  &:hover &__visible {
+    //transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    //top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    //animation: pulsate 1s infinite;
+  }
+
+}
+
+.btn-cta2 {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+ // background-image: linear-gradient(to right, $color-greensea, $color-greensea);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  //cursor: pointer;
+  animation: pulsate 1s infinite;
+  //animation: pulsate 1s 10;
+  //transition: all .2s;
+
+  //short hand for all the children
+  //& > * {
+  //  display: inline-block;
+  //  padding: 2rem 7.5rem;
+  //  height: 100%;
+  //  width: 100%;
+  //  transition: all .2s;
+  //}
+
+  &__visible {
+    display: inline-block;
+    padding: 2rem 7.5rem;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+
+  }
+
+  &__invisible {
+    display: inline-block;
+    position: absolute;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    //color: black;
+    transition: all .2s;
+
+  }
+
+  &:hover {
+    //background-image: linear-gradient(to left, $color-greensea, $color-turquoise);
+    //animation: none;
+    //animation: pulsate 1s 4;
+    //animation: pulsate 1s infinite;
+  }
+
+  &:hover &__visible {
+    //transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    //top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    //animation: pulsate 1s infinite;
+  }
+
+}

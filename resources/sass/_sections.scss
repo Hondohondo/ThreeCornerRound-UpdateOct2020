@@ -1,0 +1,333 @@
+/*---------------------------------------*/
+/*HEADINGS*/
+/*---------------------------------------*/
+
+h1 {
+  margin-bottom: 2rem;
+  color: #fff;
+  /*font-size: 4.8rem;*/
+  font-size: 3.6rem;
+
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  font-family: 'Cardo', serif;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-small-phones) {
+    //font-size: 2rem;
+  }
+}
+
+section {
+  padding: 8rem 0;
+}
+/*---------------------------------------*/
+/* SECTION ONE*/
+/*---------------------------------------*/
+.section-container {
+  display: flex;
+  /*margin-top: -20vh;*/
+  @media only screen and (max-width: $bp-phones) {
+    display: block;
+  }
+}
+
+.trc-video {
+  width: 64rem;
+  height: 36rem;
+  border-radius: 5px;
+
+  @media only screen and (max-width: $bp-huge) {
+    //width: 42.6rem;
+    //height: 24rem;
+    width: 51.2rem;
+    height: 28.8rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 44.8rem;
+    height: 25.2rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    width: 48rem;
+    height: 27rem;
+  }
+
+  @media only screen and (max-width: $bp-small-phones) {
+    width: 40rem;
+    height: 22.5rem;
+  }
+
+  @media only screen and (max-width: $bp-tiny-phones) {
+    width: 32rem;
+    height: 18rem;
+  }
+
+
+}
+
+.trc-image-1 {
+  width: 110%;
+}
+
+.text-block {
+  /*display: flex;*/
+  /*box-shadow: 1px 2px 1px rgba(0,0,0,.1);*/
+  box-shadow: 2px 2px 4px rgba(0,0,0,.25);
+  border-radius: 5px;
+  //background-color: #fff;
+  //background-color: $color-greensea;
+
+  padding: 7rem 4rem;
+  z-index: 5;
+  /*flex: 0 0 60%;*/
+  /*height: 60rem;*/
+  /*height: 55rem;*/
+  //height: 40rem;
+  @media only screen and (max-width: $bp-huge) {
+    padding: 3rem 1rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    //padding: 0;
+  }
+}
+
+.text {
+  /*width: 50%;*/
+  width: 55%;
+  //width: 60%;
+  /*text-align: right;*/
+  /*margin-left: 50%;*/
+  margin-left: 40%;
+  //margin-left: 30rem;
+
+  @media only screen and (max-width: $bp-huge) {
+    //width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+.paragraph {
+  line-height: 1.6;
+}
+h2 {
+  //margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  font-family: 'Cardo', serif;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 2rem ;
+  }
+}
+
+.illustration-1 {
+  width: 150%;
+}
+
+.picture-block {
+  /*margin-top: 40vh;*/
+  margin-top: 10vh;
+  margin-right: -25rem;
+  z-index: 10;
+
+  @media only screen and (max-width: $bp-huge) {
+    //margin-top: 15vh;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: -20rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
+/*---------------------------------------*/
+/* SECTION THREE REVERSE*/
+/*---------------------------------------*/
+.section-container {
+  /*display: flex;*/
+  /*margin-top: -20vh;*/
+}
+
+.container-reverse {
+  margin-top: 0;
+}
+.trc-image-1 {
+  width: 110%;
+}
+.text-block-reverse {
+  /*padding: 7rem 4rem;*/
+  /*z-index: 5;*/
+  //height: 50rem;
+}
+
+.text-block-reverse-3 {
+  //height: 50rem;
+}
+
+.text-reverse {
+  /*width: 55%;*/
+  width: 60%;
+  /*text-align: right;*/
+  margin-left: 4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: 2rem;
+    //width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    margin: 0;
+    width: 100%;
+  }
+
+}
+.paragraph {
+  line-height: 1.6;
+}
+
+/*h2 {*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+.illustration-1 {
+  width: 150%;
+}
+
+.picture-block-reverse {
+  /*margin-top: 40vh;*/
+  margin-top: 10vh;
+  /*margin-right: 0;*/
+  margin-left: -25rem;
+  z-index: 10;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-left: -20rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
+/*-------------------------------------
+----------Section 2 - Mission---------
+------------------------------------*/
+
+section.section-two {
+  background-color: #f2f2f2;
+  padding: 4rem 0;
+}
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading-block {
+  flex: 0 0 20%;
+
+  @media only screen and (max-width: $bp-small-phones) {
+    display: none;
+  }
+
+}
+
+.heading-block h3 {
+  font-size: 60rem;
+  line-height: 0.8;
+
+  /*background: url("../img/hero2.jpg");*/
+  background: url("../img/trc-image-4.jpg");
+  background-size: cover;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media only screen and (max-width: $bp-huge) {
+    font-size: 55rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    font-size: 40rem;
+  }
+}
+
+.heading-block h3.science {
+  font-size: 60rem;
+  line-height: 0.8;
+
+  /*background: url("../img/hero2.jpg");*/
+  background: url("../img/science.jpg");
+  background-size: cover;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media only screen and (max-width: $bp-huge) {
+    font-size: 55rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50rem;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    font-size: 40rem;
+  }
+
+  @media only screen and (max-width: $bp-small-phones) {
+    display: none;
+  }
+}
+
+.text-clip {
+  @media only screen and (max-width: $bp-small-phones) {
+    /*background: url("../img/hero2.jpg");*/
+    background: url("../img/science.jpg");
+    background-size: cover;
+    font-size: 3rem;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+.text-clip-donkey {
+  @media only screen and (max-width: $bp-small-phones) {
+    /*background: url("../img/hero2.jpg");*/
+    background: url("../img/science.jpg");
+    background-size: cover;
+    font-size: 3rem;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+

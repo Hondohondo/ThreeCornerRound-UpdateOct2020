@@ -1,0 +1,142 @@
+
+
+.row  {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: $bp-huge ) {
+    padding: 0 2%;
+  }
+
+  @media only screen and (max-width: $bp-phones) {
+    padding: 0 4%;
+  }
+}
+section {
+  padding: 8rem 0;
+  //padding: 6rem 0;
+
+  @media only screen and (max-width: $bp-medium ) {
+    padding: 4rem 0;
+  }
+
+}
+
+.container {
+  //max-width: 120rem;
+  //max-width: 140rem;
+  //margin: 8rem auto;
+  //margin: 4rem auto;
+  //margin: 0 auto;
+  //background-color: var(--color-grey-light-1);
+  //box-shadow: var(--shadow-dark);
+  //min-height: 50rem;
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  //background-color: #3498db;
+  border-bottom: 1px solid var(--color-grey-light-2);
+
+  display: flex;
+  justify-content: space-between;
+  //justify-content: space-around;
+  align-items: center;
+
+  z-index: 5;
+
+}
+
+
+.content {
+  display: flex;
+  display: none;
+}
+
+.sidebar {
+
+  background-color: var(--color-grey-dark-1);
+
+  flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  display: none;
+
+}
+
+.content-view {
+  background-color: #fff;
+
+  //Test
+  //background-color: indianred;
+  height: 80rem;
+
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+
+  //font-size: 1.4rem;
+  //display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  //border-bottom: var(--line);
+}
+
+.description {
+  font-size: 1.8rem;
+  background-color: #fff;
+  flex: 0 0 60%;
+  //flex: 0 0 70%;
+  //flex: 1 0 60%;
+  //background-color: indianred;
+  margin-right: 4.5rem;
+  padding: 3rem;
+}
+
+.snippets {
+  flex: 1;
+  //background-color: lightskyblue;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-phones) {
+    flex-direction: column;
+  }
+}
+
+.contact {
+  flex: 0 0 70%;
+  margin-right: 3.5rem;
+
+  @media only screen and (max-width: $bp-huge) {
+    flex: 0 0 60%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 2.5rem;
+  }
+  @media only screen and (max-width: $bp-phones) {
+    order: 2;
+    margin: 0;
+  }
+
+}
+
+.snippets-contact {
+  flex: 1;
+}
+
+.order {
+  order: -1;
+  margin-right: 4.5rem;
+}
